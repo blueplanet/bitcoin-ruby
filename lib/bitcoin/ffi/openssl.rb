@@ -11,6 +11,7 @@ module Bitcoin
       ffi_lib 'libeay32', 'ssleay32'
     else
       ffi_lib [
+        'libssl.so.1.1.1',
         'libssl.so.1.1.0', 'libssl.so.1.1',
         'libssl.so.1.0.0', 'libssl.so.10',
         'ssl'
